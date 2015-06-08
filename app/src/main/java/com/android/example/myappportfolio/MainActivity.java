@@ -5,65 +5,39 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
-    Button btnSpotifyStreamer,btnScores,btnLibrary,btnBuildIt,btnXYZReader,btnCapstone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnSpotifyStreamer = (Button)findViewById(R.id.btnSpotifyStreamer);
-        btnScores = (Button)findViewById(R.id.btnScores);
-        btnLibrary = (Button)findViewById(R.id.btnLibrary);
-        btnBuildIt = (Button)findViewById(R.id.btnBuildIt);
-        btnXYZReader = (Button)findViewById(R.id.btnXYZReader);
-        btnCapstone = (Button)findViewById(R.id.btnCapstone);
+    }
 
-        btnSpotifyStreamer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"This Button will launch my Spotify Streamer!",Toast.LENGTH_LONG).show();
-            }
-        });
+    public void launchSpotifyStreamer(View view) {
+        Toast.makeText(getApplicationContext(),"This Button will launch my Spotify Streamer!",Toast.LENGTH_LONG).show();
+    }
 
-        btnScores.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"This Button will launch my Scores App!",Toast.LENGTH_LONG).show();
-            }
-        });
+    public void launchScores(View view) {
+        Toast.makeText(getApplicationContext(),"This Button will launch my Scores App!",Toast.LENGTH_LONG).show();
+    }
 
-        btnLibrary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"This Button will launch my Library App!",Toast.LENGTH_LONG).show();
-            }
-        });
+    public void launchLibrary(View view) {
+        Toast.makeText(getApplicationContext(),"This Button will launch my Library App!",Toast.LENGTH_LONG).show();
+    }
 
-        btnBuildIt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"This Button will launch Build it Bigger!",Toast.LENGTH_LONG).show();
-            }
-        });
+    public void launchBuildIt(View view) {
+        Toast.makeText(getApplicationContext(),"This Button will launch Build it Bigger!",Toast.LENGTH_LONG).show();
+    }
 
-        btnXYZReader.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"This Button will launch XYZ Reader!",Toast.LENGTH_LONG).show();
-            }
-        });
+    public void launchXYZReader(View view) {
+        Toast.makeText(getApplicationContext(),"This Button will launch XYZ Reader!",Toast.LENGTH_LONG).show();
+    }
 
-        btnCapstone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"This Button will launch my Capstone App!",Toast.LENGTH_LONG).show();
-            }
-        });
+    public void launchCapstone(View view) {
+        Toast.makeText(getApplicationContext(),"This Button will launch my Capstone App!",Toast.LENGTH_LONG).show();
     }
 
     @Override
